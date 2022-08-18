@@ -63,12 +63,9 @@ end
 # Buffalo Wings (American) | Heat Level: 🌶🌶🌶
 # HINT: Try to use methods you've already written to solve this!
 def print_spiciest_foods(spicy_foods)
-   food1=spicy_foods.filter {|food| food[:heat_level]>5}
-   food1.map do |foods|
-   # chili = foods[:heat_level].times{'🌶'}
-   chili ='🌶'*foods[:heat_level]
-   puts "#{foods[:name]} (#{foods[:cuisine]}) | Heat Level: #{chili}"
-    end
+   food1=spiciest_foods(spicy_foods)
+   print_spicy_foods(food1)
+    
 
 end
 
